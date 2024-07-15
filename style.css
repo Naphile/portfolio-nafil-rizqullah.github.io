@@ -383,14 +383,14 @@ p {
 
 .timeline-content h3 {
     font-size: 20px;
-    color: white;
+    color: var(--main-color);
     margin: 0 0 10px;
     font-weight: 500;
 }
 
 .timeline-content p {
     color: white;
-    font-size: 16px;
+    font-size: 1.5rem;
     font-weight: 300;
     line-height: 22px;
 }
@@ -455,6 +455,7 @@ p {
     font-size: 3rem;
     font-weight: 800;
     line-height: 2;
+    color: var(--main-color);
 }
 
 .service-info p {
@@ -524,11 +525,16 @@ p {
     color: var(--main-color);
     margin-top: 1rem;
     font-size: 2rem;
+    text-align: center;
 }
 
 .portfolio-item p {
     color: var(--text-color);
     font-size: 1.5rem;
+}
+
+.portfolio-item .btn {
+    font-size: 1rem;
 }
 
 .contact {
@@ -678,6 +684,14 @@ p {
     section {
         padding: 10rem 10%;
     }
+
+    .home-content h3 {
+        font-size: 3.3rem;
+    }
+    
+    .service-info h4 {
+        font-size: 2.7rem;
+    }
 }
 
 @media (max-width: 992px) {
@@ -714,6 +728,10 @@ p {
     
     section {
         padding: 10rem 8%;
+    }
+
+    .service-info h4 {
+        font-size: 2.2rem;
     }
 }
 
@@ -860,6 +878,10 @@ p {
         height: 200px;
     }
 
+    .service-box .service-info {
+        padding: 30px 30px;
+    }
+
     .services-container {
         grid-template-columns: repeat(1,1fr);
     }
@@ -867,14 +889,6 @@ p {
     .portfolio-item {
         min-height: 350px;
         max-width: 400px;
-    }
-
-    .portfolio-item h2 {
-        font-size: 1.5rem;
-    }
-
-    .portfolio-item p {
-        font-size: 1.2rem;
     }
 
     .contact form{
@@ -891,24 +905,16 @@ p {
 }
 
 @media (max-width: 376px) {
+    .logo {
+        font-size: 2.5rem;
+    }
+    
     .home-content h3 {
         font-size: 2.3rem;
     }
 
-    .home-img img {
-        width: 50vw;
-    }
-
     .timeline-content {
-        padding: 20px 6px;
-    }
-
-    .timeline-content h3 {
-        font-size: 2rem;
-    }
-
-    .timeline-content p {
-        font-size: 1rem;
+        padding: 20px 10px;
     }
 
     .service-info h4 {
@@ -916,7 +922,7 @@ p {
     }
 
     .service-info p {
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
 
     .service-box {
@@ -924,25 +930,28 @@ p {
     }
 
     .portfolio-item {
-        min-height: 250px;
-        max-width: 300px;
+        padding: 30px 30px;
     }
 
     .portfolio-box img {
-        width: 25rem;
-    }
-
-    .portfolio-item h2 {
-        font-size: 1.1rem;
-    }
-
-    .portfolio-item p {
-        font-size: 1rem;
+        width: 30rem;
     }
 }
 
 @media(max-width: 321px) {
+    .logo {
+        font-size: 2rem;
+    }
+
+    .home-img img {
+        width: 45vw;
+    }
+
     .service-info h4 {
         font-size: 1.5rem;
+    }
+
+    .portfolio-item {
+        padding: 30px 15px;
     }
 }
