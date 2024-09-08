@@ -19,9 +19,6 @@ window.onscroll = () => {
     })
 }
 
-
-
-
 menuIcon.onclick = () => {
     menuIcon.classList.toggle('bx-x');
     navbar.classList.toggle('active');
@@ -42,7 +39,6 @@ document.getElementById('contact-form').addEventListener('submit', function(even
 
     emailjs.send('service_9xpenlm', 'template_tnoaorl', templateParams)
         .then(function(response) {
-            // alert('Pesan berhasil dikirim!', response.status, response.text);
             document.getElementById('contact-form').reset();
             window.location.href = 'sending-message.html';
         }, function(error) {
